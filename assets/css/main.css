@@ -14,14 +14,26 @@ nav{
   padding-left: 15px;
 }
 
+#parallax1 {
+  height: 75vh;
+}
+
+#projects {
+  padding-top: 64px;
+}
 .jumbotron {
   text-align: center;
   min-width: 485px;
 }
 
+#aboutme {
+  background-color: rgba(0,0,0,0.25);
+  padding-top: 64px;
+  border-radius: 20px;
+}
 h1 {
   font-family: 'Poiret One', cursive;
-  margin-top: 100px;
+  margin-top: 85px;
   margin-bottom: 0px;
   font-weight: 200;
   /*text-shadow: 1px 1px 1px grey;*/
