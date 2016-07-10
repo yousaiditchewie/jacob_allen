@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: rgb(236,239,241);
 }
 nav{
   z-index:999000;
@@ -27,19 +28,20 @@ nav{
 }
 
 #aboutme {
-  background-color: rgba(0,0,0,0.15);
+  background-color: rgba(84,110,122,0.75);
   margin-top: 64px;
   /*border: 1px solid white;*/
-  border-radius: 20px;
+  border-radius: 1%;
+  /*font-weight: 200;*/
 }
 
 .aboutme-text {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto', sans-serif;
   /*text-shadow: 1px 1px 2px grey;*/
 
 }
 h1 {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto', sans-serif;
   margin-top: 85px;
   margin-bottom: 0px;
   font-weight: 200;
@@ -47,7 +49,14 @@ h1 {
 }
 
 h4 {
-  font-family: 'Poiret One', cursive;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
   /*text-shadow: 1px 1px 1px grey;*/
+}
+
+.my-face {
+ /* margin-top: 20px;
+  margin-right: 5px;*/
+  max-width: 432px;
+  border-radius: 1%;
 }
