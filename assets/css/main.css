@@ -1,3 +1,6 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 nav{
   z-index:999000;
   position:fixed;
@@ -9,4 +12,23 @@ nav{
 
 .padding {
   padding-left: 15px;
+}
+
+.jumbotron {
+  text-align: center;
+  min-width: 485px;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-weight: 200;
+  /*text-shadow: 1px 1px 1px grey;*/
+}
+
+h4 {
+  font-family: 'Poiret One', cursive;
+  font-weight: 300;
+  /*text-shadow: 1px 1px 1px grey;*/
 }
