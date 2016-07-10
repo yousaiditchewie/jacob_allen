@@ -6,3 +6,7 @@ nav{
   background-color:rgb(229, 89,87);
   opacity:0.9;
 }
+
+.padding {
+  padding-left: 15px;
+}
