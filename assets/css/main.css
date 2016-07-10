@@ -27,9 +27,16 @@ nav{
 }
 
 #aboutme {
-  background-color: rgba(0,0,0,0.25);
-  padding-top: 64px;
+  background-color: rgba(0,0,0,0.15);
+  margin-top: 64px;
+  /*border: 1px solid white;*/
   border-radius: 20px;
+}
+
+.aboutme-text {
+  font-family: 'Poiret One', cursive;
+  /*text-shadow: 1px 1px 2px grey;*/
+
 }
 h1 {
   font-family: 'Poiret One', cursive;
