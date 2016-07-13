@@ -1,5 +1,11 @@
-console.log('JS Loaded!')
+(function() {
 
-$(document).ready(function(){
-     $('.parallax').parallax();
-   });
+  console.log('JS Loaded!')
+
+  $(document).ready(function(){
+       $('.parallax').parallax();
+     });
+
+
+
+})();
