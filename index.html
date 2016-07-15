@@ -20,13 +20,13 @@
   <div class="wrapper">
 
     <!-- NAV BAR -->
-    <nav>
+    <nav id="home" class="scroll.link" data-id="nav-home">
       <div class="nav-wrapper blue-grey lighten-5">
-        <a href="#" class="padding blue-grey-text text-darken-2">J A C O B A L L E N</a>
+        <a href="#" class="padding blue-grey-text text-darken-2" id="nav-home">J A C O B A L L E N</a>
         <ul id="nav-mobile" class="right hide-on-sm">
-          <li><a href="#projects" class="blue-grey-text text-darken-2">Projects</a></li>
-          <li><a href="#aboutme" class="blue-grey-text text-darken-2 hide-on-sm">About Me</a></li>
-          <li><a href="#contact" class="blue-grey-text text-darken-2">Contact</a></li>
+          <li><a href="#projects" class="blue-grey-text text-darken-2 scroll.link" data-id="projects" id="nav-projects">Projects</a></li>
+          <li><a href="#aboutme-scroll" class="blue-grey-text text-darken-2 hide-on-sm scroll.link" data-id="aboutme" id="nav-aboutme">About Me</a></li>
+          <li><a href="#contact" class="blue-grey-text text-darken-2 scroll.link" data-id="contact" id="nav-contact">Contact</a></li>
           <li><a href="assets/pdf/jacob_allen.pdf" class="blue-grey-text text-darken-2">Resume</a></li>
         </ul>
       </div>
@@ -97,27 +97,29 @@
     </div>
 
     <!-- ABOUT ME -->
-    <div class="parallax-container">
-      <div class="jumbotron row">
-        <div class="parallax"><img src="assets/images/img1.jpg"></div>
-        <div class="container valign-wrapper col s12 m8 l6 offset-m2 offset-l3">
-          <div id="aboutme" class="blue-grey-text text-lighten-4 valign z-depth-1">
-            <h2 class="aboutme-text" style="font-weight: 200;">ABOUT ME</h2>
-            <p class="aboutme-text" style="font-weight: 300;">
-              My name is Jacob, and I'm a developer with experience in HTML, CSS, JavaScript, Ruby on Rails, and the MEAN Stack.
-              I have prior experience as a Mac Technician and a working musician, and both have helped me be a better developer.
-              Being a Mac Technician equipped me with necessary skills for problem-solving, troubleshooting, and finding answers quickly under pressure.
-              Being a touring and recording musician strengthened my skills for working in teams, thinking creatively, and communicating abstract ideas in practical ways.
-              I'd like to put these skills to good use and expand my skills by joining a team of creative developers.
-            </p>
+    <div id="aboutme-scroll">
+      <div class="parallax-container">
+        <div class="jumbotron row">
+          <div class="parallax"><img src="assets/images/img1.jpg"></div>
+          <div class="container valign-wrapper col s12 m8 l6 offset-m2 offset-l3">
+            <div id="aboutme" class="blue-grey-text text-lighten-4 valign z-depth-1">
+              <h2 class="aboutme-text" style="font-weight: 200;">ABOUT ME</h2>
+              <p class="aboutme-text" style="font-weight: 300;">
+                My name is Jacob, and I'm a developer with experience in HTML, CSS, JavaScript, Ruby on Rails, and the MEAN Stack.
+                I have prior experience as a Mac Technician and a working musician, and both have helped me be a better developer.
+                Being a Mac Technician equipped me with necessary skills for problem-solving, troubleshooting, and finding answers quickly under pressure.
+                Being a touring and recording musician strengthened my skills for working in teams, thinking creatively, and communicating abstract ideas in practical ways.
+                I'd like to put these skills to good use and expand my skills by joining a team of creative developers.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- CONTACT -->
-    <div class="section blue-grey lighten-5">
-      <div id="contact" class="container">
+    <div id="contact" class="section blue-grey lighten-5 page-selection">
+      <div class="container">
         <h2 class="header blue-grey-text text-darken-3">Contact</h2>
         <div>
           <div class="row">
@@ -151,6 +153,7 @@
       </div>
     </footer>
   <!-- LINK JAVASCRIPT -->
+  <script src="assets/scripts/elevator.js"></script>
   <script src="assets/scripts/main.js"></script>
 </body>
 </html>
