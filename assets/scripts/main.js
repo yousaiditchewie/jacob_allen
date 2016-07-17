@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+(function() {
+
+  console.log('JS Loaded!')
+
+  $(document).ready(function(){
+       $('.parallax').parallax();
+     });
+=======
 (function(){
 
 
@@ -32,9 +41,13 @@ $(document).ready(function(){
    element: contactNav,
    targetElement: document.querySelector('#contact'),
  });
+>>>>>>> master
 
 
 
 })();
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> master
