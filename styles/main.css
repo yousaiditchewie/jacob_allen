@@ -1,0 +1,367 @@
+/*TENTATIVE COLORS*/
+/*#022B3A*/
+/*#D95558*/
+/*#28536B*/
+/*#FFFD77*/
+/*#93B7BE*/
+/*GREY #E7E8E7*/
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: #022b3a;
+}
+
+/*HIDE MOBILE SITE FROM DESKTOP*/
+#mobile {
+  display: none;
+}
+/*HELPER CLASSES*/
+.shadows {
+  text-shadow: 0px 2px 8px rgba(2,43,58,0.65);
+}
+
+/*VIDEO CSS*/
+
+/* Makes a fixed background wrapper
+which the user cannot interact with */
+
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Make the iframe keep an aspect ratio, and
+position it in the middle of its parent wrapper*/
+
+.iframe-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+/*rgba(217,85,88,0.65),
+rgba(18,234,234,0.65)*/
+.jumbotron{
+  z-index: -5;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(
+      rgba(2,43,58,0.5),
+      rgba(217,85,88,0.3)
+    );
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0px;
+}
+
+
+#name h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 70px;
+  margin-top: 275px;
+  margin-left: auto;
+}
+.makeBig {
+  font-size: 90px;
+}
+
+.main h4 {
+  color: white;
+  font-weight: 200;
+  /*font-size: 30px;*/
+}
+
+.mainLinks {
+  margin-top: 115px;
+}
+
+
+#projectsLink {
+  color: white;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-left: 0px;
+}
+#aboutMeLink {
+  color: white;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+#contactLink {
+  color: white;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+#resumeLink {
+  color: white;
+  font-weight: 300;
+  margin-right: 0px;
+  margin-left: 30px;
+}
+
+/*MAKE NAME RESPONSIVE FOR DESKTOP*/
+@media screen and (max-width: 782px) {
+  #name h1 {
+    font-size: 50px;
+  }
+  .makeBig {
+    font-size: 65px;
+  }
+  .main h4 {
+    font-size: 23px;
+  }
+  #projectsLink {
+    margin-right: 10px;
+  }
+  #aboutMeLink {
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  #contactLink {
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  #resumeLink {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 542px) {
+  #name h1 {
+    font-size: 35px;
+  }
+  .makeBig {
+    font-size: 48px;
+  }
+  .main h4 {
+    font-size: 18px;
+  }
+  #projectsLink {
+    margin-right: 5px;
+  }
+  #aboutMeLink {
+    margin-right: 5px;
+    margin-left: 7px;
+  }
+  #contactLink {
+    margin-right: 5px;
+    margin-left: 7px;
+  }
+  #resumeLink {
+    margin-left: 7px;
+  }
+}
+
+/*SECTION HELPERS*/
+#sectionHeader h3 {
+  color: #d95558;
+  font-size: 40px;
+  margin: 0px;
+  font-weight: 200;
+  padding-left: 20px
+}
+
+#sectionHeader h4 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+#sectionHeader a {
+  color: #28536b;
+}
+#sectionHeader a:hover {
+  /*color: #93b7be;*/
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+  transition: .25s;
+}
+
+/*BREAK*/
+#break {
+  background-color: white;
+  width: 100%;
+  height: 5px;
+}
+
+/*PROJECTS HEADER*/
+#projects {
+  background-color: white;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*PROJECTS CONTENT*/
+#projectsContent {
+  background-color: #e7e8e7;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card-content {
+  color: #022B3A;
+  /*font-weight: 500;*/
+}
+#projectLinks {
+  color: #D95558;
+}
+
+
+/*ABOUT ME HEADER*/
+#aboutMe {
+  background-color: white;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*ABOUT ME CONTENT*/
+#aboutMeContent {
+  height: 85vh;
+  min-height: 600px;
+  background: linear-gradient(
+      rgba(2,43,58,0.7),
+      rgba(217,85,88,0.5)
+    );
+  margin-bottom: 0px;
+}
+.content {
+  background-color: white;
+  margin-top: 150px;
+  margin-bottom: auto;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.5)
+}
+.content p {
+  color: #022B3A;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 50px;
+  max-height: 500px;
+}
+
+/*MAKE ABOUT ME SECTION DESKTOP RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  .content p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .content p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .content p {
+    font-size: 13px;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 484px) {
+  .content p {
+    margin: 15px;
+  }
+}
+/*CONTACT HEADER*/
+#contact {
+  background-color: white;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*CONTACT CONTENT*/
+#contactContent {
+  height: 86vh;
+  min-height: 600px;
+  margin-bottom: 0px;
+}
+
+#contact_photo {
+    background: linear-gradient(
+       rgba(2,43,58,0.7),
+       rgba(217,85,88,0.35)
+      ),
+      url(../assets/me.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  max-width: 50%;
+}
+
+#contact_words {
+  height: 100%;
+  max-width: 50%;
+  background-color: #022b3a;
+}
+#contact_words h3 {
+  color: #93B7BE;
+  font-weight: 100;
+}
+#feelfree {
+  margin-top: 100px;
+
+}
+#checkout {
+  margin-top: 200px;
+}
+#contact_words a {
+  font-weight: 100;
+  /*color: #D95558;*/
+}
+
+.contactLinks {
+  margin-left: 50%;
+}
+#email {
+  color: white;
+}
+#github {
+  color: #D95558;
+}
+#trello {
+  color: white;
+}
+#linkedin {
+  color: #D95558;
+}
+#resume {
+  color: #D95558;
+}
+/*MAKE CONTACT SECTION DESKTOP RESPONSIVE*/
+@media screen and (max-width: 1097px) {
+  #feelfree {
+    font-size: 32px;
+  }
+  #checkout {
+    font-size: 32px;
+  }
+  #contact_words h5 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 838px) {
+  #feelfree {
+    font-size: 20px;
+  }
+  #checkout {
+    font-size: 20px;
+  }
+  #contact_words h5 {
+    font-size: 17px;
+  }
+}

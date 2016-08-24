@@ -1,0 +1,114 @@
+/*SMART PHONES*/
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /*HIDE VIDEO*/
+  #desktop {
+    display: none;
+  }
+
+  body, html {
+    /*margin-top: -15px;*/
+    width: auto !important;
+    overflow-x: hidden !important;
+
+  }
+  /*ADD BACKGROUND FOR MOBILE*/
+  .jumbotron {
+    background: linear-gradient(
+       rgba(2,43,58,0.7),
+       rgba(217,85,88,0.35)
+      ),
+      url(../assets/background.png);
+    height: 100vh;
+  }
+
+  #name h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 80px;
+    margin-top: 275px;
+    margin-left: auto;
+  }
+  .makeBig {
+    font-size: 100px;
+  }
+
+  .main h4 {
+    margin-top: 200px;
+    color: white;
+    font-weight: 200;
+    font-size: 45px;
+  }
+
+  .mainLinks {
+    margin-top: 600px;
+    font-size: 31px;
+  }
+
+  /*ABOUT ME SECTION*/
+  .content p {
+    font-size: 30px;
+    max-height: 80%;
+  }
+
+  /*BACKGROUND FOR ABOUT ME*/
+  #aboutMeContent {
+    background: linear-gradient(
+       rgba(2,43,58,0.7),
+       rgba(217,85,88,0.35)
+      ),
+      url(../assets/background.png);
+    height: 80vh;
+  }
+
+  /*CONTACT SECTION*/
+  #contactContent {
+    height: 800px;
+  }
+  #feelfree {
+    font-size: 35px;
+  }
+  #checkout {
+    font-size: 35px;
+  }
+  .contactLinks a {
+    margin-top: 15px;
+    font-size: 50px;
+  }
+
+  /*LANDSCAPE RESPONSIVENESS*/
+  @media (orientation: landscape) {
+    #name h1 {
+      color: white;
+      font-weight: 400;
+      font-size: 70px;
+      margin-top: 100px;
+      margin-left: auto;
+    }
+    .makeBig {
+      font-size: 90px;
+    }
+
+    .main h4 {
+      margin-top: 100px;
+      color: white;
+      font-weight: 200;
+      font-size: 45px;
+    }
+
+    .mainLinks {
+      margin-top: 100px;
+      font-size: 31px;
+    }
+
+    .content p {
+      font-size: 20px;
+      margin: 10px;
+    }
+  }
+
+
+}
