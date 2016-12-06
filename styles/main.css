@@ -20,6 +20,17 @@ body {
   text-shadow: 0px 2px 8px rgba(2,43,58,0.65);
 }
 
+/*Preloader*/
+#preloader-outter {
+  height: 100vh;
+  width: 100vw;
+}
+
+#preloader-inner {
+  height: 200px;
+  width: auto;
+}
+
 /*VIDEO CSS*/
 
 /* Makes a fixed background wrapper
