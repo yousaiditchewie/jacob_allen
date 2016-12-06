@@ -1,5 +1,5 @@
 (function() {
-  console.log("js loaded");
+  // console.log("js loaded");
 
   // ELEVATOR JS VARIABLES AND FUNCTIONS
   var projects         = document.getElementById("projectsLink");
