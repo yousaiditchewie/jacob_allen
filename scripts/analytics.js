@@ -65,9 +65,9 @@
   function resumeTracker() {
     ga("send", {
       "hitType":       "event",
-      "eventCategory": "click",
+      "eventCategory": "outBoundLink",
       "eventAction":   "viewResume",
-      "eventLabel":    "viewResume"
+      "eventLabel":    "Resume"
     });
     console.log("resume sent");
   };
@@ -78,40 +78,40 @@
   //CRITYK
   $("#critykLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "CRITYK",
     "eventLabel":    "CRITYK"
   }));
 
   //homeGrown
   $("#homeGrownLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "homeGrown",
     "eventLabel":    "homeGrown"
   }));
 
   //RNR
   $("#rnrLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "RNR",
     "eventLabel":    "RNR"
   }));
 
   //tastr
   $("#tastrLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "tāstr",
     "eventLabel":    "tāstr"
   }));
 
   //DOTS & BOXES
   $("#dots&boxesLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "Dots&Boxes",
     "eventLabel":    "Dots&Boxes"
   }));
 
@@ -119,32 +119,32 @@
   //EMAIL
   $("#email").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "eMail",
     "eventLabel":    "eMail"
   }));
 
   //GITHUB
   $("#github").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
-    "eventLabel":    "Github"
+    "eventCategory": "outBoundLink",
+    "eventAction":   "GitHub",
+    "eventLabel":    "GitHub"
   }));
 
   //TRELLO
   $("#trello").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "Trello",
     "eventLabel":    "Trello"
   }));
 
   //LINKEDIN
   $("#linkedin").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "click",
-    "eventAction":   "outBoundLink",
+    "eventCategory": "outBoundLink",
+    "eventAction":   "LinkedIn",
     "eventLabel":    "LinkedIn"
   }));
 
