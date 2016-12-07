@@ -15,7 +15,14 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    // write a function that sends tracking data to GA
+    function projectsTracker() {
+      ga("projects.send", "pageview");
+      //console log for testing
+      console.log('projets sent');
+    };
     ga('create', 'UA-85710672-1', 'auto');
+    ga('create', 'UA-85710672-1', 'auto', 'projects');
     ga('send', 'pageview');
 
   </script>
