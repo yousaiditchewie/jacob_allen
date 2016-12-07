@@ -10,7 +10,7 @@
   // **DECLARE INTERACTION VARIABLES BY ID
   //INTRO SECTION
   var $mainProjects = $("#projectsLink");
-  var $mainAboutMe  = $("#aboutMe");
+  var $mainAboutMe  = $("#aboutMeLink");
   var $mainContact  = $("#contactLink");
   var $mainResume   = $("#resumeLink");
 
