@@ -13,12 +13,17 @@
   var $contactLink = $("#contactLink");
   var $resumeLink  = $("#resumeLink");
 
-  // // write a function that sends tracking data to GA
-  // function projectsTracker() {
-  //   ga("projects.send", "pageview");
-  //   //console log for testing
-  //   console.log('projets sent');
-  // };
+  // write a function that sends tracking data to GA
+  function projectsTracker() {
+    ga("send", {
+      "hitType":       "event",
+      "eventCategory": "userInteraction",
+      "eventAction":   "click",
+      "eventLabel":    "clicked"
+    });
+    //console log for testing
+    console.log('projets sent');
+  };
 
   // call the function that sends tracking data to GA
   $projects.click(projectsTracker);
