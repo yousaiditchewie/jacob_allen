@@ -65,7 +65,7 @@
   function resumeTracker() {
     ga("send", {
       "hitType":       "event",
-      "eventCategory": "outBoundLink",
+      "eventCategory": "click",
       "eventAction":   "viewResume",
       "eventLabel":    "Resume"
     });
@@ -78,7 +78,7 @@
   //CRITYK
   $("#critykLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "CRITYK",
     "eventLabel":    "CRITYK"
   }));
@@ -86,7 +86,7 @@
   //homeGrown
   $("#homeGrownLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "homeGrown",
     "eventLabel":    "homeGrown"
   }));
@@ -94,7 +94,7 @@
   //RNR
   $("#rnrLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "RNR",
     "eventLabel":    "RNR"
   }));
@@ -102,7 +102,7 @@
   //tastr
   $("#tastrLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "tāstr",
     "eventLabel":    "tāstr"
   }));
@@ -110,7 +110,7 @@
   //DOTS & BOXES
   $("#dots&boxesLink").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "Dots&Boxes",
     "eventLabel":    "Dots&Boxes"
   }));
@@ -119,7 +119,7 @@
   //EMAIL
   $("#email").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "eMail",
     "eventLabel":    "eMail"
   }));
@@ -127,7 +127,7 @@
   //GITHUB
   $("#github").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "GitHub",
     "eventLabel":    "GitHub"
   }));
@@ -135,7 +135,7 @@
   //TRELLO
   $("#trello").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "Trello",
     "eventLabel":    "Trello"
   }));
@@ -143,7 +143,7 @@
   //LINKEDIN
   $("#linkedin").click(ga("send", {
     "hitType":       "event",
-    "eventCategory": "outBoundLink",
+    "eventCategory": "click",
     "eventAction":   "LinkedIn",
     "eventLabel":    "LinkedIn"
   }));
