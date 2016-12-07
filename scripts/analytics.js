@@ -71,23 +71,99 @@
     });
     console.log("resume sent");
   };
+
   // CALL FUNCTION SENDING EVENTS TO GA
-  // **FOR ALL PROJECTS LINKS
+
+  //**FOR ALL PROJECT OUTBOUND LINKS**
+  //CRITYK
+  $("#critykLink").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "CRITYK"
+  }));
+
+  //homeGrown
+  $("#homeGrownLink").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "homeGrown"
+  }));
+
+  //RNR
+  $("#rnrLink").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "RNR"
+  }));
+
+  //tastr
+  $("#tastrLink").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "tāstr"
+  }));
+
+  //DOTS & BOXES
+  $("#dots&boxesLink").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "Dots&Boxes"
+  }));
+
+  //**FOR ALL CONTACT LINKS**
+  //EMAIL
+  $("#email").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "eMail"
+  }));
+
+  //GITHUB
+  $("#github").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "Github"
+  }));
+
+  //TRELLO
+  $("#trello").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "Trello"
+  }));
+
+  //LINKEDIN
+  $("#linkedin").click(ga("send", {
+    "hitType":       "event",
+    "eventCategory": "click",
+    "eventAction":   "outBoundLink",
+    "eventLabel":    "LinkedIn"
+  }));
+
+  //**FOR ALL PROJECTS LINKS**
   $mainProjects.click(projectsTracker);
   $aboutMeProjects.click(projectsTracker);
   $contactProjects.click(projectsTracker);
 
-  // **FOR ALL ABOUT ME LINKS
+  //**FOR ALL ABOUT ME LINKS**
   $mainAboutMe.click(aboutMeTracker);
   $projectsAboutMe.click(aboutMeTracker);
   $contactAboutMe.click(aboutMeTracker);
 
-  // **FOR ALL CONTACT LINKS
+  //**FOR ALL CONTACT LINKS**
   $mainContact.click(contactTracker);
   $projectsContact.click(contactTracker);
   $aboutMeContact.click(contactTracker);
 
-  // **FOR ALL RESUME LINKS
+  //**FOR ALL RESUME LINKS**
   $mainResume.click(resumeTracker);
   $projectsResume.click(resumeTracker);
   $aboutMeResume.click(resumeTracker);
