@@ -63,6 +63,8 @@
        rgba(217,85,88,0.35)
       ),
       url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80vh;
   }
 
