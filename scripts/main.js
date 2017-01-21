@@ -1,6 +1,9 @@
 (function() {
   // console.log("js loaded");
-
+  // $(document).ready(function(){
+  //    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  //    $('.modal-trigger').modal('#modal1');
+  //  });
   // ELEVATOR JS VARIABLES AND FUNCTIONS
   var projects         = document.getElementById("projectsLink");
   var aboutMe          = document.getElementById("aboutMeLink");
