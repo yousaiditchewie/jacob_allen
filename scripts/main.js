@@ -4,6 +4,11 @@
   //    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   //    $('.modal-trigger').modal('#modal1');
   //  });
+  //PRELOADER FUNCTION
+  // window.addEventListener('load', function(event) {
+  //   document.getElementById("#preloader").addClass("remove-from-dom");
+  //   document.getElementById("#desktop-site").removeClass("remove-from-dom");
+  // });
   // ELEVATOR JS VARIABLES AND FUNCTIONS
   var projects         = document.getElementById("projectsLink");
   var aboutMe          = document.getElementById("aboutMeLink");
