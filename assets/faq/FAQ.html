@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jacob's jQuery FAQ Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  </head>
+  <!--jQuery CDN-->
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    var plus  = "+";
+    var minus = "-";
+    function showHide(element) {
+      var $button     = element.children("span");
+      var $outterDiv  = element.closest(".outter-div");
+      var $answer     = $outterDiv.children(".answer");
+      var $isHidden   = $answer.hasClass("isHidden");
+      if ($isHidden) {
+        $answer.removeClass("isHidden").addClass("isShown");
+        $button.html(minus);
+      } else {
+        $answer.removeClass("isShown").addClass("isHidden");
+        $button.html(plus);
+      }
+    };
+  </script>
+  <body>
+    <div class="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="outter-div">
+        <div id="question1" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 1?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question2" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 2?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question3" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 3?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question4" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 4?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question5" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 5?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question6" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 6?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="quesiton7" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 7?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question8" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 8?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question 9" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 9?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <div class="outter-div">
+        <div id="question10" class="question" onclick="showHide($(this))"><span class="show-hide">+</span>Question 10?</div>
+        <div class="answer isHidden">
+          Lorem ipsum dolor sit amet, tempus congue sit class euismod non, hendrerit tristique vitae urna porttitor, potenti ad phasellus massa, curabitur eleifend, id in eu orci vestibulum ipsum luctus
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <style>
+      body {
+        font-family: 'Arimo', sans-serif;
+        color: #08415C;
+      }
+      div.faq {
+        width: 80%;
+        max-width: 900px;
+        display: block;
+        margin: 100px auto;
+      }
+      div.question {
+        cursor: pointer;
+        width: 100%;
+        border: 1px solid #08415C;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 0;
+        margin: 10px 0;
+      }
+      div.question span.show-hide {
+        padding: 0px 10px;
+        color: #CC2936;
+      }
+      div.answer {
+        padding: 10px 15px 0px 15px;
+        font-size: 16px;
+        font-weight: regular;
+        margin-bottom: 20px;
+      }
+      div.answer.isHidden {
+        display: none;
+      }
+      div.answer.isShown {
+        display: block;
+      }
+    </style>
+  </body>
+</html>
