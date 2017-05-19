@@ -1,0 +1,728 @@
+/*FONT FOR USE*/
+/*ARTICULAT FONT SYNTAX*/
+
+/*"articulat_cf"
+"articulat_cfmedium"
+"articulat_cfbold"
+"articulat_cftext"
+"articulat_cflight"
+"articulat_cfdemi_bold"*/
+
+html {
+  font-family: "articulat_cf", sans-serif;
+  src: url(./fontstylesheet.css);
+}
+
+/*HIDE MOBILE*/
+#mobile {
+  display: none;
+}
+
+/****HELPER CLASSES****/
+/*TEXT SHADOW*/
+.shadows {
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.65);
+}
+/*REMOVE ELEMENT FROM DOM*/
+.remove {
+  display: none;
+}
+
+body {
+  background: white;
+}
+/*MAIN LANDING PAGE JUMBOTRON AND VIDEO*/
+
+/*VIDEO CSS*/
+/* Makes a fixed background wrapper
+which the user cannot interact with */
+
+/*  filter: gray; /* IE6-9 */
+/*    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+/*    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+/*}*/
+
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Make the iframe keep an aspect ratio, and
+position it in the middle of its parent wrapper*/
+
+.iframe-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+
+/*MAKESHIFT NAV-BAR*/
+header {
+  width: 100%;
+  /*position: fixed;*/
+}
+
+/*LOGO AND BRAND TITLE*/
+.logo {
+  margin-top: 29px;
+  padding-left: 15px;
+ /* max-width: 208px;
+  max-height: 43px;*/
+}
+
+#critykLogo{
+  -webkit-filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.5));
+  filter:         drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+.links {
+  margin-top: 50px;
+}
+
+#contact {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 200;
+  padding: 0px;
+}
+
+#aboutuslink {
+  /*margin: 30px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 200;
+  padding: 0px;
+  /*position: fixed;*/
+}
+
+#welcome{
+  /*height: 90vh;*/
+  margin-bottom: 0;
+  min-height: 800px;
+}
+
+.goodnews {
+  margin-bottom: 5%;
+}
+
+
+
+.jumbotron{
+  z-index: -1;
+  max-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.3)
+    );
+    /*url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);*/
+  background-size: cover;
+  background-position: center;
+}
+
+/****DISABLE VIDEO FOR MOBILE****/
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #desktop iframe {
+      display: none;
+    }
+    .jumbotron{
+      z-index: -1;
+      max-height: 100vh;
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.65),
+          rgba(0,0,0,0.45)
+        ),
+        url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+.main {
+  text-align: center;
+  width: 100%;
+  height: 60%;
+  margin-top: 20%;
+  margin-bottom: 40%;
+  position: relative;
+}
+
+#topWords {
+  font-family: "articulat_cfbold", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: ;
+}
+
+#bottom {
+  font-family: "articulat_cflight", sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  /*line-height: 78px;*/
+}
+
+/*RESPONSIVE FONT SIZE KEEPS THE CHEVRON BUTTON SPACED CORRECTLY*/
+@media screen and (max-width: 1205px) {
+  #topWords {
+    font-size: 35px;
+  }
+  #bottom {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 797px) {
+  #topWords {
+    font-size: 25px;
+  }
+  #bottom {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 529px) {
+  #topWords {
+    font-size: 20px;
+  }
+  #bottom {
+    font-size: 20px;
+  }
+}
+
+/*SIGN UP BUTTON*/
+#signup{
+  font-weight: 200;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+  /*animation-duration: 2s;*/
+  /*animation-name: fade;*/
+}
+
+/*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
+#warning {
+  padding: 0;
+  /*text-align: center;*/
+  margin-top: 10px;
+  color: white;
+  height: 175px;
+  width: auto;
+  /*width: 100%;*/
+}
+
+#warning p {
+  padding-top: 100px;
+  font-size: 7px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 1920px) {
+  #warning {
+    margin-bottom: 200px;
+  }
+  #warning p {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  #warning {
+    margin-bottom: 60px;
+  }
+  #warning p {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #warning {
+    margin-bottom: 10px;
+  }
+  #warning p {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  #warning {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  #warning {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  #warning {
+    margin-bottom: 160px;
+  }
+}
+#chevron {
+  /*bottom: 0;*/
+}
+/*BREAK*/
+.break{
+  height: 10px;
+  background: white;
+}
+
+
+/****ABOUT US****/
+
+#aboutus {
+  padding-top: 100px;
+  background-color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  min-height: 500px;
+  color: #007AFF;
+  /*position: absolute;*/
+}
+
+@media screen and (max-width: 861px) {
+  #aboutus {
+    min-height: 350px;
+  }
+}
+@media screen and (max-width: 474px) {
+  #aboutus {
+    min-height: 275px;
+  }
+}
+
+#nothing_container img {
+  width: 100%;
+}
+#delights_spots img {
+  margin-top: 20px;
+  width: 85%;
+}
+#aboutus h5 {
+  font-weight: 300;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  #aboutus h5 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 619px) {
+  #aboutus h5 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 444px) {
+  #aboutus h5 {
+    font-size: 10px;
+  }
+}
+
+#explore {
+  margin-top: 30px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 35px;
+  color: rgb(239, 184, 61);
+}
+
+@media screen and (max-width: 1035px) {
+  #explore {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #explore {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 619px) {
+  #explore {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 470px) {
+  #explore {
+    font-size: 15px;
+  }
+}
+
+#explore span {
+  color: black;
+}
+#dscontainer {
+  bottom: 0;
+}
+#delights {
+  display: inline-block;
+  float: left;
+  /*clear: right;*/
+  height: 300px;
+  width: auto;
+  bottom: 0;
+  left: 0;
+}
+#spots {
+  display: inline-block;
+  float: right;
+  clear: left;
+  height: 300px;
+  width: auto;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 861px) {
+  #spots {
+    height: 175px;
+  }
+  #delights {
+    height: 175px;
+  }
+}
+
+/****PARALLAX****/
+.parallax-container {
+  z-index: 2;
+  height: 350px;
+}
+
+/****INFO SECTION HELPERS****/
+#info_section {
+  margin-bottom: 0px;
+}
+
+.info_section_wrapper {
+  height: 780px;
+  background: white;
+  z-index: 1;
+  margin-bottom: 0px;
+}
+
+
+.info_section_words {
+  height: 100%;
+  max-width: 50%;
+  background-color: #007AFF;
+  color: white;
+}
+
+.info_section_words h2 {
+  margin-top: 11%;
+  margin-left: 5%;
+  font-weight: 200;
+  font-size: 65px;
+}
+
+.info_section_words h5 {
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 200;
+}
+
+.info_section_words p {
+  margin-left: 5%;
+  margin-right: 3%;
+  font-size: 20px;
+  font-weight: 300;
+  /*letter-spacing: 0.15px;*/
+  /*line-height: 27px;*/
+}
+
+
+@media screen and (max-width: 1920px) {
+  .info_section_wrapper {
+    height: 1076px;
+  }
+  .info_section_words h2 {
+    font-size: 75px;
+  }
+   .info_section_words h5 {
+    font-size: 55px;
+  }
+  .info_section_words p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .info_section_wrapper {
+    height: 850px;
+  }
+  .info_section_words h2 {
+    font-size: 70px;
+  }
+   .info_section_words h5 {
+    font-size: 50px;
+  }
+  .info_section_words p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .info_section_wrapper {
+    height: 780px;
+  }
+  .info_section_words h2 {
+    font-size: 65px;
+  }
+   .info_section_words h5 {
+    font-size: 30px;
+  }
+  .info_section_words p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info_section_wrapper {
+    height: 600px;
+  }
+  .info_section_words h2 {
+    font-size: 50px;
+  }
+   .info_section_words h5 {
+    font-size: 30px;
+  }
+  .info_section_words p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .info_section_wrapper {
+    height: 500px;
+  }
+  .info_section_words h2 {
+    font-size: 30px;
+  }
+  .info_section_words h5 {
+    font-size: 20px;
+  }
+  .info_section_words p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .info_section_wrapper {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .info_section_words h2 {
+    font-size: 25px;
+  }
+  .info_section_words h5 {
+    font-size: 17px;
+  }
+  .info_section_words p {
+    font-size: 9px;
+  }
+}
+
+.info_section_photo {
+  height: 100%;
+  max-width: 50%;
+  position: relative;
+}
+
+/****EXPLORE & DISCOVER****/
+#explore_discover img {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+}
+
+@media screen and (max-width: 1920px) {
+  #explore_discover img {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  #explore_discover img {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #explore_discover img {
+    margin-top: 20px;
+  }
+}
+
+#explore_discover_photo {
+  background: url(../assets/Photos/searchandexplore.png) no-repeat center center;
+  background-size: cover;
+}
+
+/****SPEAK FOODIE****/
+#speak_foodie_photo {
+  background: url(../assets/Photos/Teengirleatingaburger.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#speak_foodie img {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1920px) {
+  #speak_foodie img {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  #speak_foodie img {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #speak_foodie img {
+    margin-top: 20px;
+  }
+}
+
+/****STALK, STASH & SHARE****/
+#stalk_stash_share_photo {
+  background: url(../assets/Photos/stalkstashshare.png) no-repeat center center;
+  background-size: cover;
+}
+
+#stalk_stash_share img {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+}
+
+@media screen and (max-width: 1920px) {
+  #stalk_stash_share img {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  #stalk_stash_share img {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #stalk_stash_share img {
+    margin-top: 15px;
+  }
+}
+
+/*SIGN UP 2*/
+#signup2 {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  z-index: 2;
+}
+
+#signup2 h3 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #007AFF;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+#signup2 p {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+/****BREAK 2****/
+#break2 {
+  height: 40px;
+  background-color: rgb(239,184,61);
+}
+
+
+.footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: white;
+  color: #4a4a4a;
+}
+
+.footer_space {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.footer_header {
+  color: #007aff;
+}
+footer {
+  color: #4a4a4a;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 993px) {
+
+  .push_right {
+    margin-left: 20px;
+  }
+}
+.social_link {
+  margin-top: 10px;
+  margin-left: 20px;
+  /*margin_left: 20px;*/
+}
+
+.facebook {
+  margin-top: 10px;
+}
+
+.copyright {
+  padding-top: 5px;
+  font-size: 10px;
+  height: 50px;
+  width: 100%;
+}
+.footer a {
+  color: #4a4a4a;
+  font-weight: 200;
+  /*opacity: 0.75;*/
+}
+

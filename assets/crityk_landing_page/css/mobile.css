@@ -1,0 +1,270 @@
+/*SMART PHONES*/
+
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+  body, html {
+    margin-top: -15px;
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  /*HIDE DESKTOP*/
+  #desktop {
+    display: none;
+    /*width: 100%;*/
+  }
+
+  #mobile {
+    display: inline;
+    width: 100%;
+  }
+
+  /*MAKESHIFT NAV-BAR*/
+  header {
+    width: 100%;
+    /*position: fixed;*/
+  }
+
+  /*LOGO AND BRAND TITLE*/
+  #logoM {
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #critykLogo{
+    height: 100px;
+    width: auto;
+    -webkit-filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.5));
+    filter:         drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+  }
+
+  #critykBrand {
+    height: 100px;
+    width: auto;
+  }
+
+  /*TOP SECTION GENERIC CSS*/
+  .jumbotron{
+    z-index: 1;
+    /*height: 100%;*/
+    height: 100vh;
+    /*min-height: ;*/
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.45)
+      ),
+      url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*ANIMATED TEXT*/
+  .main {
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 20%;
+    margin-bottom: 40%;
+    position: relative;
+  }
+
+  #topWords {
+    font-family: "articulat_cfbold", sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    margin-bottom: ;
+  }
+
+  #bottom {
+    font-family: "articulat_cflight", sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    margin-bottom: 100px;
+    /*line-height: 78px;*/
+  }
+
+  #signup {
+    font-size: 30px;
+    border: 4px solid white;
+  }
+
+  /*SIGNUP MODAL*/
+  .modal-content h4 {
+    font-size: 45px;
+  }
+  .modal-content p {
+    font-size: 28px;
+  }
+  #mce-EMAIL {
+    font-size: 30px;
+  }
+  #mc-embedded-subscribe {
+    font-size: 25px;
+  }
+
+  #warning {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+  }
+
+  #warning p {
+    font-size: 20px;
+  }
+
+  #chevron img {
+    height: 150px;
+    width: auto;
+  }
+
+  /*LANDSCAPE FIXES*/
+  @media (orientation: landscape) {
+    /*REMOVE TEXT SHADOWS TO AVOID SHADOW ARTIFACTS*/
+    .shadows {
+      text-shadow: none;
+    }
+    #warning {
+      display: none;
+    }
+    #chevron {
+      display: none;
+    }
+    #critykLogo {
+      height: 50px;
+      width: auto;
+    }
+    #critykBrand {
+      height: 50px;
+      width: auto;
+    }
+    .main {
+      margin-top: 10%;
+    }
+    #topWords {
+      font-size: 50px;
+    }
+    #bottom {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+  }
+  /*BREAK*/
+
+  /*ABOUT US*/
+  #aboutus {
+    /*height: 800px;*/
+  }
+  #the_only {
+    font-size: 31px;
+  }
+  #explore {
+    font-size: 38px;
+  }
+
+  /*INFO SECTION*/
+  .info_section_wrapper {
+    height: 950px;
+    z-index: 4;
+  }
+  .info_section_words h2 {
+    font-size: 80px;
+  }
+  .info_section_words h5 {
+    font-size: 45px;
+  }
+  .info_section_words p {
+    font-size: 27px;
+  }
+
+  /*EXPLORE & DISCOVER*/
+  #explore_discover img {
+    /*margin-top: 50px;*/
+    width: 450px;
+    height: auto;
+  }
+
+  /*SPEAK FOODIE*/
+  #speak_foodie img {
+    width: 450px;
+    height: auto;
+  }
+
+  /*STALK, STASH & SHARE*/
+  #stalk_stash_share img {
+    width: 450px;
+    height: auto;
+  }
+
+  /*BREAK 2*/
+  #break2 {
+    height: 80px;
+  }
+
+  /*FOOTER*/
+  #blue_logo {
+    width: 130px;
+    height: auto;
+  }
+
+  .footer_header {
+    font-size: 30px;
+  }
+
+  #footer a {
+    font-size: 25px;
+  }
+
+  .facebook {
+    height: 50px;
+    width: 50px;
+  }
+  .social_link {
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+  }
+  .copyright {
+    font-size: 20px;
+  }
+
+}/*END OF MEDIA QUERY*/
+
+
+
+/*TABLATES*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+
+  body, html {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+  /*#desktop {
+    display: none;
+  }*/
+
+  .jumbotron{
+    z-index: 1;
+    max-height: 100vh;
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.45)
+      ),
+      url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #aboutus {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
