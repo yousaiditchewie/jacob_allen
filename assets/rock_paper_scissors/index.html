@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="center-text">Rock, Paper, Scissors...</h1>
+  <h4 class="center-text">A game of patience.  A game of discipline.  A game of Emoji's.</h4>
+  <div id="message-board" class="border center-text"></div>
+  <div id="game-board" class="border">
+    <div id="computer">
+      <div class="center-text">Computer</div>
+      <img id="computer-img" valign="center" src="">
+    </div>
+    <div id="player-1">
+      <div class="center-text">Player 1</div>
+      <img id="rock" class="rotate" src="assets/rock.png" alt="Rock" onclick="play(this)">
+      <img id="paper" class="rotate" src="assets/paper.png" alt="Paper" onclick="play(this)">
+      <img id="scissors" class="rotate" src="assets/scissors.png" alt="Scissors" onclick="play(this)">
+    </div>
+  </div>
+  <div id="score-board">
+    <!--table border="2">
+      <tbody>
+        <tr>
+          <td>Player-1</td>
+          <td id="player-1-score"></td>
+        </tr>
+        <tr>
+          <td>Computer</td>
+          <td id="player-2-score"></td>
+        </tr>
+        <tr class="hide-this">
+          <td>Game</td>
+          <td>1 0f 1</td>
+        </tr>
+      </tbody>
+    </table-->
+  </div>
+  <div id="reset-button" class="border center-text" onclick="startGame()">RESET</div>
+  <!--div id="overlay" class="hide-this"></div-->
+  <!--div id="message-overlay" class="border hide-this"></div-->
+  <script src="js/main.js"></script>
+</body>
+</html>

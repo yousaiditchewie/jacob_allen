@@ -1,0 +1,136 @@
+* {
+  transition: all .25s; }
+
+body {
+  font-family: "VT323", monospace;
+  background-color: #282828;
+  color: #00FF00;
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.75);
+  transition: all .25s; }
+
+h1 {
+  font-size: 2.5rem;
+  width: 100%;
+  margin: 15px; }
+
+h4 {
+  font-size: 1.75rem;
+  width: 100%;
+  margin: 15px 0 30px 0; }
+
+.center-text {
+  text-align: center; }
+
+.border {
+  border: 2px solid #00FF00; }
+
+.text-primary {
+  color: #00FF00; }
+
+.text-secondary {
+  color: #E0E0E0; }
+
+#message-board {
+  background-color: #646464;
+  font-size: 1.5rem;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px; }
+  @media screen and (max-width: 500px) {
+    #message-board {
+      font-size: 3.5rem;
+      width: 80vw;
+      margin: 0 auto 5vh auto; } }
+
+#game-board {
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  background-color: #000000; }
+
+#computer,
+#player-1 {
+  display: block;
+  width: calc(50% - 1px);
+  height: 100%; }
+
+#computer {
+  float: left;
+  border-right: 1px solid #00FF00; }
+
+#player-1 {
+  float: right;
+  border-left: 1px solid #00FF00; }
+
+#computer div,
+#player-1 div {
+  margin-top: 10px;
+  font-size: 1.25rem; }
+
+#computer img {
+  display: block;
+  margin: 50% auto 0 auto; }
+  #computer img:hover {
+    cursor: pointer; }
+
+#player-1 img {
+  display: block;
+  height: 150px;
+  margin: 10px auto; }
+  #player-1 img.rotate {
+    transform: rotate(270deg); }
+  #player-1 img:hover {
+    cursor: pointer; }
+
+#player-1 #rock {
+  height: 135px; }
+
+table {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 1.25rem; }
+
+td {
+  padding: 3px;
+  text-align: left; }
+  td:last-child {
+    text-align: center; }
+
+#reset-button {
+  width: 100px;
+  padding: 10px;
+  background-color: #646464;
+  font-size: 1.75rem;
+  margin: 15px auto;
+  transition: all .25s; }
+  #reset-button:hover {
+    cursor: pointer;
+    background-color: #E0E0E0; }
+
+#overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  opacity: 0.65;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+#message-overlay {
+  z-index: 9999999;
+  position: fixed;
+  display: block;
+  width: 350px;
+  height: 200px;
+  top: 40%;
+  left: calc(50% - 175px);
+  background-color: #000000; }
+
+.hide-this {
+  opacity: 0; }
+
+/*# sourceMappingURL=style.css.map */
