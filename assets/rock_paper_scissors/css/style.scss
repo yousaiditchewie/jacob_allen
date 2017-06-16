@@ -178,12 +178,14 @@ td {
   #player-1 {
     div {
       margin-top: 20px;
+      margin-bottom: 30%;
       font-size: 3.25rem;
     }
-  }
-  #computer-img {
-    height: 250px;
-    width: auto;
+    #computer-img {
+      height: 250px;
+      width: auto;
+      margin-top: 70%;
+    }
   }
   #player-1 {
     img {

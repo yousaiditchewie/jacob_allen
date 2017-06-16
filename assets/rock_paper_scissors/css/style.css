@@ -146,11 +146,13 @@ td {
   #computer div,
   #player-1 div {
     margin-top: 20px;
+    margin-bottom: 30%;
     font-size: 3.25rem; }
-
-  #computer-img {
+  #computer #computer-img,
+  #player-1 #computer-img {
     height: 250px;
-    width: auto; }
+    width: auto;
+    margin-top: 70%; }
 
   #player-1 img {
     height: 200px; }
