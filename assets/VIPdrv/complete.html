@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIPdrv prototype</title>
+</head>
+<body>
+  <style>
+    #VIPdrv {
+      font-family: sans-serif;
+    }
+    #VIPdrv .vip__hero {
+      background: #000;
+    }
+    #VIPdrv .vip__hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+      opacity: .8;
+    }
+    #VIPdrv .vip__intro img {
+      display: block;
+      margin: 0 auto;
+      max-width: 399px;
+      width: 100%;
+      height: auto;
+    }
+    #VIPdrv .vip__intro h3 {
+      padding-top: 30px;
+      text-align: center;
+      color: #282828;
+    }
+    #VIPdrv .vip__intro a {
+      display: block;
+      margin: 30px auto;
+      max-width: 200px;
+      line-height: 50px;
+      background: #2062F0;
+      background: -webkit-linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      background: -moz-linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      background: -o-linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      background: linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      -webkit-box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+      -o-box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+      box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      transition: all .35s ease;
+    }
+    #VIPdrv .vip__intro a:hover {
+      -webkit-box-shadow: 0 11px 11px -4px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0 11px 11px -4px rgba(0,0,0,0.75);
+      -o-box-shadow: 0 11px 11px -4px rgba(0,0,0,0.75);
+      box-shadow: 0 11px 11px -4px rgba(0,0,0,0.75);
+    }
+    #VIPdrv .vip__about {
+      padding: 0 15px;
+    }
+    #VIPdrv .vip__about .vip__about-step {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      /*margin-bottom: 50px;*/
+      background: #222;
+    }
+    #VIPdrv .vip__about .vip__about-step img {
+      max-width: 50%;
+    }
+    #VIPdrv .vip__about .vip__about-step div {
+      width: 50%;
+      text-align: left;
+      padding: 1.75em;
+      margin: 1.75em;
+      background: -webkit-linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      background: -moz-linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      background: -o-linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      background: linear-gradient(141deg, #2062F0 0%, #123683 75%);
+      -webkit-box-shadow: 0 11px 11px -4px rgba(0,0,0,0.85);
+      -moz-box-shadow: 0 11px 11px -4px rgba(0,0,0,0.85);
+      -o-box-shadow: 0 11px 11px -4px rgba(0,0,0,0.85);
+      box-shadow: 0 11px 11px -4px rgba(0,0,0,0.85);
+    }
+    #VIPdrv .vip__about .vip__about-step.odd > div {
+      order: 2;
+    }
+    #VIPdrv .vip__about .vip__about-step:after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+    }
+    #VIPdrv .vip__about .vip__about-step h1,
+    #VIPdrv .vip__about .vip__about-step p {
+      color: #fff;
+    }
+    @media only screen and (max-width: 991px) {
+      #VIPdrv .vip__about {
+        padding: 0;
+      }
+      #VIPdrv .vip__about .vip__about-step {
+        display: block;
+        background: #fff;
+      }
+      #VIPdrv .vip__about .vip__about-step img,
+      #VIPdrv .vip__about .vip__about-step div {
+        display: block;
+        max-width: 100%;
+        -webkit-box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+        -o-box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+        box-shadow: 0 6px 6px -4px rgba(0,0,0,0.75);
+      }
+      #VIPdrv .vip__about .vip__about-step img {
+        width: 100%;
+      }
+      #VIPdrv .vip__about .vip__about-step div {
+        width: calc(100% - 30px);
+        padding: 15px;
+        margin: 15px auto;
+      }
+    }
+  </style>
+  <div id="VIPdrv">
+    <div class="vip__hero">
+      <img src="http://gdurl.com/6k1k" alt="VIPdrv, a luxurious way to test drive a car">
+    </div>
+    <div class="vip__intro">
+      <!-- <img src="http://gdurl.com/YF_9" alt="VIPdrv logo"> -->
+      <h3>
+        Click below to view our inventory and schedule your VIPdrv test drive now.
+      </h3>
+      <a href="#">VIEW INVENTORY</a>
+    </div>
+    <div class="vip__about">
+      <div class="vip__about-step odd">
+        <div>
+          <h1>Step 1</h1>
+          <p>All dealer websites stop here. Watch how we take a boring lead form and create the best online experiences for scheduling test drives</p>
+        </div>
+        <img src="http://gdurl.com/8PBK" alt="Step 1, Set a Day and a Time">
+      </div>
+      <div class="vip__about-step even">
+        <div>
+          <h1>Step 2</h1>
+          <p>We give the customer the ability to select a salesperson for their test drive appointment.  This puts a name/face up front and begins the personalization of the test drive. </p>
+        </div>
+        <img src="http://gdurl.com/4Ybl" alt="Step 2, Set a Day and a Time">
+      </div>
+      <div class="vip__about-step odd">
+        <div>
+          <h1>Step 3</h1>
+          <p>Yes,  that's right.  What better way to establish a good connection with a potential customer, than to offer to have a beverage waiting for them upon their arrival</p>
+        </div>
+        <img src="http://gdurl.com/aq5W" alt="Step 3, Set a Day and a Time">
+      </div>
+      <div class="vip__about-step even">
+        <div>
+          <h1>Step 4</h1>
+          <p>What type of test drive do you want to take? Typical daily commute, hit the open road or quick drive by the house to park in the garage?  We got you covered.
+            <br><br>We customize the test drive routes, giving your customers the best test drive experience to fit their lifestyle.</p>
+        </div>
+        <img src="http://gdurl.com/XjkK" alt="Step 4, Set a Day and a Time">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
